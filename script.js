@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             noteElement.innerHTML = `
                 <p>${note.text || note}</p> 
-                <button class="delete-btn" data-index="${index}">🗹</button>
+                <button class="delete-btn" data-index="${index}">✓</button>
                 <button class="imp-btn" data-index="${index}" style="color: ${note.important ? 'black' : ''}">⦿</button>
             `;
             notesList.appendChild(noteElement);
