@@ -4,8 +4,11 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
-  min-height: 100vh;
-  overflow-y: auto; /* Ensure scrolling is enabled */
+  height: 100vh;
+  display: flex;
+  justify-content: top;
+  align-items: top;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Donation bar */
@@ -79,8 +82,8 @@ span {
   border-radius: 10px;
   width: 450px;
   text-align: center;
-  margin: 50px auto; /* Centered */
-  position: relative;
+  margin: 50px auto; /* Centered and allow scrolling */
+  position: relative; /* Remove fixed positioning */
 }
 
 @media (max-width: 768px) {
@@ -94,8 +97,6 @@ span {
   .container {
     width: 90%;
     padding: 25px;
-    margin-left: auto;
-    margin-right: 0; /* Fix right margin */
   }
 }
 
