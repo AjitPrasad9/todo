@@ -1,0 +1,235 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  min-height: 100vh;
+  overflow-y: auto; /* Ensure scrolling is enabled */
+}
+
+/* Donation bar */
+/* donation bar working start */
+.top-bar {
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 6px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.paypal-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paypal-logo {
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+span {
+  text-align: center;
+  font-size: 14px;
+  font: arial;
+  font-weight: 500;
+}
+
+.donate-button {
+  background-color: #ffc107;
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 35px;
+  margin-top: 5px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+/* donation bar working start */
+
+/* Main container */
+.container {
+  background-color: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  width: 450px;
+  text-align: center;
+  margin: 50px auto; /* Centered and allow scrolling */
+  position: relative; /* Remove fixed positioning */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%; /* Use 80% width on medium screens */
+    padding: 30px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%; /* Use 90% width on small screens */
+    padding: 25px; /* Adjust padding for even smaller screens */
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: #28a745;
+}
+
+.tab-btn:hover {
+  background-color: #444;
+}
+
+/* Note editor */
+.note-editor {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#note-input {
+  height: 120px;
+  padding: 12px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #2b2b2b;
+  color: #fff;
+  resize: none;
+  transition: border 0.3s ease;
+}
+
+#note-input:focus {
+  border: 1px solid #28a745;
+}
+
+#add-note-btn {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+#add-note-btn:hover {
+  background-color: #218838;
+}
+
+/* Notes list */
+.notes-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.note {
+  background-color: #2c2c2c;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  position: relative;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.note:hover {
+  background-color: #333;
+}
+
+.note.important {
+  background-color: #feee91;
+  color: #000;
+}
+
+.note p {
+  margin: 0;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  background-color: transparent;
+  color: #dc3545;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  /* background-color: #c82333; */
+  color: #fff;
+}
+
+.imp-btn {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  background-color: #ffde2100;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.imp-btn:hover {
+  /* background-color: #ffde21; */
+  color: #feee91;
+}
+
+div.note p {
+  padding-left: 20px;
+  margin-left: 4px;
+}
