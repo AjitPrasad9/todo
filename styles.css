@@ -72,27 +72,30 @@ span {
 /* donation bar working start */
 
 /* Main container */
+/* Main container */
 .container {
   background-color: #1f1f1f;
   padding: 30px;
   border-radius: 10px;
   width: 450px;
   text-align: center;
-  margin: 50px auto; /* Centered and allow scrolling */
-  position: relative; /* Remove fixed positioning */
+  margin: 50px auto; /* Centered */
+  position: relative;
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 80%; /* Use 80% width on medium screens */
-    padding: 30px; /* Adjust padding for smaller screens */
+    width: 90%;
+    padding: 25px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    width: 90%; /* Use 90% width on small screens */
-    padding: 25px; /* Adjust padding for even smaller screens */
+    width: 90%;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: 0; /* Fix right margin */
   }
 }
 
